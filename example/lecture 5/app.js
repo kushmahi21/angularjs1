@@ -1,12 +1,14 @@
 (function () {
   'use strict';
 
-  var x="hello";
-
   angular.module('myFirstApp', []);
 
-  .controller('MyFirstController', function() {
+  .controller('MyFirstController', function ($scope) {
+    $scope.name = "Kushagra";
+    $scope.sayHello = function () {
+      return "Hello Coursera!";
+    };
 
   });
 
-} ) ();
+})();
