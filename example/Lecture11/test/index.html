@@ -12,6 +12,12 @@
     <div ng-controller='MsgController'>
       {{name}} has a message for you: <br>
       {{sayMessage()}}
+      <div>
+        <button ng-click="change()">change pic</button>
+        <br>
+
+        <img ng-src="images/kush_{{stateOfBeing}}.png">
+      </div>
     </div>
   </body>
 </html>
